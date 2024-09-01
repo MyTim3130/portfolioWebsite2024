@@ -99,22 +99,19 @@ export default function Navbar() {
         initial={false}
         animate={isActive ? 'open' : 'closed'}
       >
-        <nav className="flex flex-col space-y-8 text-lg md:text-2xl font-light relative bottom-20">
+        <nav className="flex flex-col space-y-8 text-lg md:text-2x relative bottom-20 font-medium items-center">
           <Link href="/">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl">Home</div>
+            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">HOME</div>
           </Link>
-          <Link href="/shop">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl">Shop</div>
+          <Link href="/">
+            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">PROJECTS</div>
           </Link>
-          <Link href="/about">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl">About Us</div>
+          <Link href="/">
+            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">ABOUT</div>
           </Link>
-          <Link href="/lookbook">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl">Lookbook</div>
-          </Link>
-          <Link href="/contact">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl">Contact</div>
-          </Link>
+          <Link href="/">
+            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">CONTACT</div>
+            </Link>
         </nav>
       </motion.div>
     </motion.div>
