@@ -95,7 +95,7 @@ export default function Home() {
             className="text-2xl font-bold text-white opacity-75"
             transition={{ delay: 0 }} // No delay for the first text
           >
-            HI, I'M TIM, I WILL MAKE
+            HI, I&apos;M TIM, I WILL MAKE
           </motion.h2>
           <motion.h1
             className="text-6xl font-bold text-white"
