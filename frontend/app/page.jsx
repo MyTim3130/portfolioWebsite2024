@@ -137,7 +137,7 @@ export default function Home() {
           <motion.h3
             className="text-2xl font-bold text-white opacity-75"
           >
-            I’M A SELFTOUGHT
+            I&apos;M A SELFTOUGHT
           </motion.h3>
           <motion.h2
             className="text-5xl font-bold text-white"
@@ -147,9 +147,9 @@ export default function Home() {
           <motion.p
             className="text-md text-white mt-3 w-5/6"
           >
-            ,who has a passion for creating cool web applications. I've honed my
-            skills through hands-on learning and I'm excited to bring your ideas
-            to life. Let's work together to build something awesome!
+            ,who has a passion for creating cool web applications. I&apos;ve honed my
+            skills through hands-on learning and I&apos;m excited to bring your ideas
+            to life. Let&apos;s work together to build something awesome!
           </motion.p>
         </motion.div>
         <motion.div 
