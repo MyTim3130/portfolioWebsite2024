@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testaments = ({ isBackgroundWhite }) => {
   return (
-    <main className={`pl-5 pt-32 md:ml-24 ${isBackgroundWhite ? 'text-black' : 'text-white'}`} style={{ transition: 'color 0.5s ease' }}>
+    <main className={`pl-5 pt-32 md:ml-24 mt-28 ${isBackgroundWhite ? 'text-black' : 'text-white'}`} style={{ transition: 'color 0.5s ease' }}>
       <h2 className='text-5xl font-medium'>
         TAKE IT FROM <p className={`${isBackgroundWhite ? 'text-red-500' : 'text-[#FF4848]'}`}>OTHERS</p>
       </h2>
