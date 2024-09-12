@@ -137,21 +137,22 @@ export default function Home() {
   }, [isBackgroundWhite]);
 
   useEffect(() => {
-    gsap.to(
-      "#figur",
-
-      {
-        scrollTrigger: {
-          trigger: "#figur",
-          start: "top top",
-          end: "bottom center",
-          scrub: 1,
-        },
-        y: "45%",
-        right: "0",
-        scale: 0.3,
-      }
-    );
+    if (window.innerWidth > 768) {
+      gsap.to(
+        "#figur",
+        {
+          scrollTrigger: {
+            trigger: "#figur",
+            start: "top top",
+            end: "bottom center",
+            scrub: 1,
+          },
+          y: "45%",
+          right: "0",
+          scale: 0.3,
+        }
+      );
+    }
   }, []);
 
   return (
@@ -175,9 +176,9 @@ export default function Home() {
             className="w-full flex justify-center items-center"
             id="figur"
           >
-            <div className="h-full w-full">
+            <div className="h-full w-full flex justify-center">
               <img
-                src="/figur.png"
+                src="/figur.png" 
                 className="w-3/6 sm:w-2/6 md:w-full md:relative md:right-2/4 "
                 alt="missing figure"
               />
@@ -223,18 +224,18 @@ export default function Home() {
             />
           </div>
         </motion.div>
-
+      
         <motion.div
           ref={textRef2}
           initial={{ opacity: 0, y: 50 }}
           animate={controls2}
-          className="pl-5 mt-5"
+          className="pl-5 mt-5 md:relative bottom-96 left-2/4"
         >
           <motion.h3 className="text-2xl font-bold opacity-75">
             I&apos;M A SELFTOUGHT
           </motion.h3>
           <motion.h2 className="text-5xl font-bold">PROGRAMMER</motion.h2>
-          <motion.p className="text-md mt-3 w-5/6">
+          <motion.p className="text-md mt-3 w-5/6 md:w-1/4">
             ,who has a passion for creating cool web applications. I&apos;ve
             honed my skills through hands-on learning and I&apos;m excited to
             bring your ideas to life. Let&apos;s work together to build
@@ -245,7 +246,7 @@ export default function Home() {
           ref={textRef3}
           initial={{ opacity: 0, y: 50 }}
           animate={controls3}
-          className="flex flex-col mt-20 pl-5 gap-3"
+          className="flex flex-col mt-20 pl-5 gap-3 md:items-center md:gap-10 md:mt-10"
         >
           <motion.h3 className="text-2xl font-bold opacity-75 flex">
             AND A&nbsp;<span className="text-[#FF4848]"> PASSIONATE</span>
