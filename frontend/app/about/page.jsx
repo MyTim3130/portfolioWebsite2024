@@ -57,7 +57,7 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={skillsInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }}
-          className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center"
+          className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center items-center justify-center h-screen"
         >
           <div className="flex flex-col items-center">
             <motion.img
