@@ -248,7 +248,7 @@ export default function Home() {
           animate={controls3}
           className="flex flex-col mt-20 pl-5 gap-3 md:items-center md:gap-10 md:mt-10"
         >
-          <div className="w-screen flex justify-center items-center">
+          <div className="w-full flex justify-center items-center">
 
          
            <div className="w-4/6 rounded-full overflow-hidden sm:w-3/6 md:w-2/6 md:hidden mt-10">
