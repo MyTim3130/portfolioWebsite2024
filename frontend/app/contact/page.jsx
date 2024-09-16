@@ -22,6 +22,11 @@ const Contact = () => {
 
   return (
     <main className="h-dvh w-full relative text-white ">
+         <img
+        src="/noise.png"
+        className="h-dvh w-dvw fixed -z-10"
+        alt="missing noise"
+      />
       <Navbar /> {/* Include the Navbar */}
 
       {/* Add padding-top to ensure the content doesn't overlap with the Navbar */}

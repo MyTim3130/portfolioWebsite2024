@@ -57,6 +57,11 @@ const Projects = () => {
 
   return (
     <main className="h-full w-full relative text-white">
+         <img
+        src="/noise.png"
+        className="h-dvh w-dvw fixed -z-10"
+        alt="missing noise"
+      />
       <Navbar /> {/* Include Navbar */}
 
       {/* Projects Section */}

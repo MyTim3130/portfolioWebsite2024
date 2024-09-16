@@ -101,17 +101,25 @@ export default function Navbar() {
       >
         <nav className="flex flex-col space-y-8 text-lg md:text-2x relative bottom-20 font-medium items-center">
           <Link href="/">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">HOME</div>
+            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">
+              LETS GO HOME
+            </div>
           </Link>
           <Link href="/projects">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">PROJECTS</div>
+            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">
+              SEE MY CREATIONS
+            </div>
           </Link>
           <Link href="/about">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">ABOUT</div>
+            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">
+              GET TO KNOW ME
+            </div>
           </Link>
           <Link href="/contact">
-            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">CONTACT</div>
-            </Link>
+            <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">
+              LETS CONNECT
+            </div>
+          </Link>
         </nav>
       </motion.div>
     </motion.div>
