@@ -36,7 +36,7 @@ const Contact = () => {
           className="max-w-5xl"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FF4848] mb-8">
-            Let's Connect!
+            Let&apos;s Connect!
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl mb-10">
             Feel free to get in touch using the contact details below or by filling out the form.

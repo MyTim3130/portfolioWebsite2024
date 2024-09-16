@@ -32,7 +32,7 @@ const About = () => {
             Hi, I'm Tim
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl mt-4">
-            A self-taught developer and photographer who’s passionate about bringing ideas to life, whether it’s through coding or capturing moments.
+            A self-taught developer and photographer who&apos;s passionate about bringing ideas to life, whether it&apos;s through coding or capturing moments.
           </p>
 
           {/* Scaling and Centering of Image */}
