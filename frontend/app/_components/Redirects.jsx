@@ -1,9 +1,11 @@
 'use client';
+import { useRouter } from 'next/navigation'; // Import useRouter from next/navigation
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Redirects = () => {
+  const router = useRouter(); // Initialize the router instance for navigation
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
@@ -36,16 +38,21 @@ const Redirects = () => {
     }
   }, [inView1, inView2, inView3, controls1, controls2, controls3]);
 
+  // Function to handle navigation on click
+  const handleNavigation = (path) => {
+    router.push(path); // Navigate to the specified path
+  };
+
   return (
     <main className="p-10 mt-36">
-      {/* Centering the cards and adding space between them */}
       <div className="flex flex-col gap-16 md:flex-row md:justify-center md:gap-16 md:px-16">
         {/* Card 1: Projects */}
         <motion.div
           ref={ref1}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={controls1}
-          className="relative rounded-2xl overflow-hidden w-full h-96 md:h-[350px] md:w-[250px] flex items-end shadow-xl border-2 border-gray-300 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 transition-transform"
+          className="relative rounded-2xl overflow-hidden w-full h-96 md:h-[350px] md:w-[250px] flex items-end shadow-xl border-2 border-gray-300 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 transition-transform cursor-pointer"
+          onClick={() => handleNavigation('/projects')} // Navigate to /projects
         >
           <img
             className="absolute -left-1/2 h-fit bottom-10"
@@ -69,7 +76,8 @@ const Redirects = () => {
           ref={ref2}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={controls2}
-          className="relative rounded-2xl overflow-hidden w-full h-96 md:h-[350px] md:w-[250px] flex items-end shadow-xl border-2 border-gray-300 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 transition-transform"
+          className="relative rounded-2xl overflow-hidden w-full h-96 md:h-[350px] md:w-[250px] flex items-end shadow-xl border-2 border-gray-300 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 transition-transform cursor-pointer"
+          onClick={() => handleNavigation('/about')} // Navigate to /about
         >
           <img
             className="absolute -left-1/2 h-fit bottom-10"
@@ -93,7 +101,8 @@ const Redirects = () => {
           ref={ref3}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={controls3}
-          className="relative rounded-2xl overflow-hidden w-full h-96 md:h-[350px] md:w-[250px] flex items-end shadow-xl border-2 border-gray-300 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 transition-transform"
+          className="relative rounded-2xl overflow-hidden w-full h-96 md:h-[350px] md:w-[250px] flex items-end shadow-xl border-2 border-gray-300 backdrop-filter backdrop-blur-md bg-opacity-10 bg-gray-400 transition-transform cursor-pointer"
+          onClick={() => handleNavigation('/contact')} // Navigate to /contact
         >
           <img
             className="absolute -left-1/2 h-fit bottom-10"

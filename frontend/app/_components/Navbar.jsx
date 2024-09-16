@@ -57,13 +57,13 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className="bg-[rgba(255,255,255,0.1)] backdrop-filter backdrop-blur-lg fixed w-full box-border p-2.5 md:p-5 z-[100] transition-transform duration-500 ease-in-out"
+      className="text-white bg-[rgba(255,255,255,0.1)] backdrop-filter backdrop-blur-lg fixed w-full box-border p-2.5 md:p-5 z-[100] transition-transform duration-500 ease-in-out"
       initial={{ y: '-100%' }}
       animate={isVisible ? { y: 0 } : { y: '-100%' }}
       style={{ top: 0 }}
     >
       <div className="flex justify-between items-center text-xs md:text-sm font-normal uppercase relative p-2">
-        <Link href="/" className="text-black no-underline font-bold text-lg md:text-xl">
+        <Link href="/" className="text-white no-underline font-bold text-lg md:text-xl">
           Tim
         </Link>
         <div
@@ -75,7 +75,7 @@ export default function Navbar() {
               isActive ? 'rotate-45' : ''
             }`}
           >
-            <span className="block bg-black h-[1px] w-full relative before:absolute before:w-full before:h-[1px] before:bg-black before:top-[4px] before:transition-all after:absolute after:w-full after:h-[1px] after:bg-black after:top-[-4px] after:transition-all"></span>
+            <span className="block bg-white h-[1px] w-full relative before:absolute before:w-full before:h-[1px] before:bg-white before:top-[4px] before:transition-all after:absolute after:w-full after:h-[1px] after:bg-white after:top-[-4px] after:transition-all"></span>
           </div>
           <div className="relative flex items-center h-full mr-5 text-xl">
             <motion.p variants={opacity} animate={!isActive ? 'open' : 'closed'}>
@@ -103,13 +103,13 @@ export default function Navbar() {
           <Link href="/">
             <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">HOME</div>
           </Link>
-          <Link href="/">
+          <Link href="/projects">
             <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">PROJECTS</div>
           </Link>
-          <Link href="/">
+          <Link href="/about">
             <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">ABOUT</div>
           </Link>
-          <Link href="/">
+          <Link href="/contact">
             <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">CONTACT</div>
             </Link>
         </nav>
