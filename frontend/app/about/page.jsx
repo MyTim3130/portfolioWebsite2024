@@ -45,7 +45,7 @@ const About = () => {
             <img
               src="/me.png" // Replace with your actual image
               alt="Tim Hausl-Kramper"
-              className="w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4 rounded-full border-4 border-[#FF4848] scale-125"
+              className="w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4 rounded-full border-4 border-[#FF4848]"
             />
           </motion.div>
         </motion.div>
