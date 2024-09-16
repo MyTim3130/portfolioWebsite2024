@@ -29,7 +29,7 @@ const About = () => {
           className="max-w-5xl"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FF4848]">
-            Hi, I'm Tim
+            Hi, I&apos;m Tim
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl mt-4">
             A self-taught developer and photographer who&apos;s passionate about bringing ideas to life, whether it&apos;s through coding or capturing moments.
