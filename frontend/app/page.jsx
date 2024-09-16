@@ -166,7 +166,7 @@ export default function Home() {
 
       <section
         className={isBackgroundWhite ? "text-black" : "text-white"}
-        style={{ transition: "color 0.5s ease" }}
+        style={{ transition: "color 0.5s ease", paddingTop: "5rem" }}
       >
         <div className="flex flex-col md:flex-row items-center justify-center overflow-hidden">
           <motion.div
@@ -236,7 +236,7 @@ export default function Home() {
           </motion.h3>
           <motion.h2 className="text-5xl font-bold">PROGRAMMER</motion.h2>
           <motion.p className="text-md mt-3 w-5/6 md:w-1/4">
-            ,who has a passion for creating cool web applications. I&apos;ve
+            who has a passion for creating cool web applications. I&apos;ve
             honed my skills through hands-on learning and I&apos;m excited to
             bring your ideas to life. Let&apos;s work together to build
             something awesome!
