@@ -218,8 +218,8 @@ export default function Home() {
         >
           <div className="w-4/6 rounded-full overflow-hidden sm:w-3/6 md:w-2/6 md:hidden">
             <img
-              className="scale-150 relative top-16"
-              src="/me.png"
+              className="relative"
+              src="/webdev.svg"
               alt="missing me"
             />
           </div>
@@ -248,6 +248,17 @@ export default function Home() {
           animate={controls3}
           className="flex flex-col mt-20 pl-5 gap-3 md:items-center md:gap-10 md:mt-10"
         >
+          <div className="w-screen flex justify-center items-center">
+
+         
+           <div className="w-4/6 rounded-full overflow-hidden sm:w-3/6 md:w-2/6 md:hidden mt-10">
+            <img
+              className="relative"
+              src="/photography.svg"
+              alt="missing me"
+            />
+          </div>
+          </div>
           <motion.h3 className="text-2xl font-bold opacity-75 flex">
             AND A&nbsp;<span className="text-[#FF4848]"> PASSIONATE</span>
           </motion.h3>
@@ -255,6 +266,7 @@ export default function Home() {
           <motion.h2 className="text-5xl font-bold">VIDEOGRAPHER</motion.h2>
           <motion.h2 className="text-5xl font-bold">DESIGNER</motion.h2>
         </motion.div>
+        
 
         <div ref={whatICanDoRef}>
           <WhatICanDo />

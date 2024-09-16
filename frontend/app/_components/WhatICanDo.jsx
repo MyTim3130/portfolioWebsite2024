@@ -18,7 +18,7 @@ const WhatICanDo = () => {
   };
 
   return (
-    <main className="mt-56">
+    <main className="mt-56 pl-5">
       <div className="md:container md:mx-auto md:px-5 md:flex md:w-screen md:justify-evenly">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start">
           <div className="mb-10 md:mb-0 md:w-1/2">
