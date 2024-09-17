@@ -186,7 +186,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full p-3 rounded-lg bg-[#FF4848] text-lg sm:text-xl font-bold hover:bg-[#e04343] transition-all"
+              className="w-full p-3 rounded-lg bg-[#FF4848] text-lg sm:text-xl font-bold hover:bg-[#e04343] transition-all mb-24"
               disabled={isSending}
             >
               {isSending ? 'Sending...' : 'Send Message'}

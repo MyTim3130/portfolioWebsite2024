@@ -64,7 +64,7 @@ const WhatICanDo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.1, duration: 0.5 }}
                     >
-                      <p className='w-full'>
+                      <p className='w-5/6'>
                         I can create modern, responsive websites that are tailored
                         to your needs. Whether you need a personal blog, a business
                         site, or a portfolio, I can deliver a high-quality website
@@ -113,7 +113,7 @@ const WhatICanDo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.1, duration: 0.5 }}
                     >
-                      <p className='w-full'>
+                      <p className='w-5/6'>
                         I specialize in building web applications that are robust,
                         scalable, and efficient. From single-page applications to
                         complex multi-user systems, I can develop solutions that
@@ -162,7 +162,7 @@ const WhatICanDo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.1, duration: 0.5 }}
                     >
-                      <p className='w-full'>
+                      <p className='w-5/6'>
                         With a passion for photography, I can offer high-quality
                         photo services. Whether you need portraits, product
                         photography, or event coverage, I can provide images that

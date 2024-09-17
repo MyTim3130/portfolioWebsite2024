@@ -270,10 +270,16 @@ export default function Home() {
 
         <div ref={whatICanDoRef}>
           <WhatICanDo />
-        </div>
-        <div ref={testamentsRef}>
+      </div>
+
+      {
+        /* 
+         <div ref={testamentsRef}>
           <Testaments isBackgroundWhite={isBackgroundWhite} />
         </div>
+        */
+      }
+       
         <Redirects />
       </section>
     </main>

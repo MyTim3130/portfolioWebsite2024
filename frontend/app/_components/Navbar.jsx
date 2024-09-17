@@ -102,7 +102,7 @@ export default function Navbar() {
         <nav className="flex flex-col space-y-8 text-lg md:text-2x relative bottom-20 font-medium items-center">
           <Link href="/">
             <div className="hover:text-gray-400 cursor-pointer text-4xl hover:scale-110 transition-all duration-200">
-              LETS GO HOME
+              HOME
             </div>
           </Link>
           <Link href="/projects">
