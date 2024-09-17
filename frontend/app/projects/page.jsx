@@ -11,7 +11,7 @@ const Projects = () => {
     {
       title: "Zombies",
       description:
-        "A web-based version of the popular WERWOLF party game, built for when you and your friends forgot the Cards",
+        "A web-based twist on the classic WERWOLF party game. Play with your friends when you've left the cards at home, bringing the fun of deduction and strategy to the web.",
       imgSrc: "/zombie.png",
       demoLink: "https://zombie.timhausl.com/",
       category: "web-apps",
@@ -19,45 +19,47 @@ const Projects = () => {
     {
       title: "Memini",
       description:
-        "An educational tool designed for teachers to improve learning experiences for students. (Requires manual server start)",
+        "An innovative tool for teachers that enhances student learning. Memini helps create interactive lessons that stick with students. (Note: Requires manual server start.)",
       imgSrc: "/memini.png",
       demoLink: "https://vwa-orcin.vercel.app/",
       category: "web-apps",
     },
     {
       title: "Der Dümmste Fliegt",
-      description: "A fun, interactive front-end-only quiz game.",
+      description:
+        "A fun and competitive front-end-only quiz game. Test your knowledge, challenge your friends, and see who remains the smartest in the room.",
       imgSrc: "/quiz.png",
       demoLink: "https://der-dummste-fliegt.vercel.app/",
       category: "web-apps",
     },
     {
       title: "Sportfest BG/BRG Stockerau 2024",
-      description: "Photography of the 32. Sportfest of the BG/BRG Stockerau.",
+      description:
+        "Captured the excitement and energy of the 32nd annual Sportfest at BG/BRG Stockerau with vibrant, dynamic photography.",
       imgSrc: "/sportfest24_2.png",
       demoLink: "https://www.bgstockerau.ac.at/archiv/detail.php?news_id=1743",
       category: "photography",
     },
-
     {
       title: "Creative Portfolio Website",
       description:
-        "A sleek, artistic portfolio website to showcase creative work.",
+        "An artistic, sleek portfolio website that brings creative work to life. Perfect for showcasing projects with a modern and elegant design.",
       imgSrc: "/artist.png",
       demoLink: "https://artist-website-seven.vercel.app/",
       category: "web-apps",
     },
-
     {
       title: "Sk Korneuburg - SKN Juniors",
-      description: "A professional photography showcase of a football match.",
+      description:
+        "Professional-grade photography capturing the intensity and spirit of the football match between Sk Korneuburg and SKN Juniors.",
       imgSrc: "/skn.png",
       demoLink: "https://www.instagram.com/p/C_JF3rdIJqA/?img_index=1",
       category: "photography",
     },
     {
       title: "Sportfest BG/BRG Stockerau 2023",
-      description: "Photography of the 31. Sportfest of the BG/BRG Stockerau.",
+      description:
+        "A photographic journey through the 31st Sportfest at BG/BRG Stockerau, showcasing the athleticism and school spirit of the participants.",
       imgSrc: "/sportfest23.png",
       demoLink: "https://www.bgstockerau.ac.at/archiv/detail.php?news_id=1743",
       category: "photography",
@@ -65,12 +67,13 @@ const Projects = () => {
     {
       title: "YT-Rating App",
       description:
-        "A now-inactive AI-powered app for summarizing YouTube videos.",
+        "An AI-driven app that provided users with quick summaries and insights for YouTube videos. Though inactive now, it streamlined content discovery for creators and viewers.",
       imgSrc: "/ytRating.png",
       demoLink: "https://yt-rating.vercel.app/",
       category: "web-apps",
     },
   ];
+  
 
   // Filtering the projects based on the selected category
   const filteredProjects = projects.filter(
